@@ -9,8 +9,8 @@ import {
 } from "@mui/material";
 import useCrud from "../../hooks/useCrud";
 import { useEffect } from "react";
-import ListItemAvatar from "@mui/material";
-import Avatar from "@mui/material";
+import { ListItemAvatar } from "@mui/material";
+import { Avatar } from "@mui/material";
 import { MEDIA_URL } from "../../config";
 import { Link } from "react-router-dom";
 
