@@ -5,11 +5,26 @@ declare module "@mui/material/styles" {
         primaryAppBar: {
             height: number;
         };
+        primaryDraw: {
+            width: number;
+            closed: number;
+        };
+        secondaryDraw: {
+            width: number;
+        };
     }
+    
     interface ThemeOptions {
-        primaryAppBar?: {
-            height?: number;
-        }
+        primaryAppBar: {
+            height: number;
+        };
+        primaryDraw: {
+            width: number;
+            closed: number;
+        };
+        secondaryDraw: {
+            width: number;
+        };
     }
 }
 
@@ -23,7 +38,13 @@ export const createMuiTheme = () => {
             fontFamily: ["IBM Plex Sans", "serif"].join(','),
     
         },
-
+        primaryDraw: {
+            width: 240,
+            closed: 70,
+        },
+        secondaryDraw: {
+            width: 240,
+        },
         components: {
             MuiAppBar: {
                 defaultProps: {

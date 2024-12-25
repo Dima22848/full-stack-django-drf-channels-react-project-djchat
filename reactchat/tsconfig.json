@@ -6,10 +6,5 @@
   ]
 }
 
-// {
-//   "compilerOptions": {
-//     "jsx": "react-jsx",  // или "react"
-//     "esModuleInterop": true
-//   }
-// }
+
 
