@@ -9,11 +9,11 @@ type Props = {
 }
 
 
-const DrawerToggle: React.FC<Props> = ({open, handleDrawerClose, handleDrawerOpen}) => {
+const DrawerToggle: React.FC<Props> = ({ open, handleDrawerClose, handleDrawerOpen }) => {
     return (
-        <Box sx={{height: "50px", display: "flex", alignItems: "center", justifyContent: "center"}}>
+        <Box sx={{ height: "50px", display: "flex", alignItems: "center", justifyContent: "right" }}>
             <IconButton onClick={open ? handleDrawerClose : handleDrawerOpen}>
-                {open ? <ChevronLeft /> : <ChevronRight />}
+                {open ? <ChevronRight /> : <ChevronLeft />}
             </IconButton>
         </Box>
     )
